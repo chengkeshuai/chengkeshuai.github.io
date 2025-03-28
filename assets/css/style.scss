@@ -275,3 +275,75 @@ body {
   border: none !important;
   background-color: transparent !important;
 }
+
+/* 搜索框样式 */
+.search-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  
+  input {
+    flex: 1;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    
+    &::placeholder {
+      color: #999;
+    }
+  }
+  
+  .search-button {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: #2b5876;
+    
+    &:hover {
+      color: #4e4376;
+    }
+  }
+}
+
+#search-results {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-top: 1rem;
+  
+  .search-item {
+    padding: 1rem;
+    border-bottom: 1px solid #e1e4e8;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+    
+    h3 {
+      margin: 0 0 0.5rem 0;
+      color: #2b5876;
+    }
+    
+    p {
+      margin: 0;
+      color: #666;
+      font-size: 0.9rem;
+    }
+    
+    &:hover {
+      background: #f8f9fa;
+    }
+  }
+}
