@@ -1,24 +1,45 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import 'jekyll-theme-cayman';
 
 /* 自定义样式 */
-body {
-  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
-}
-
 .page-header {
   background: linear-gradient(120deg, #155799, #159957);
+  padding: 2rem 1rem;
 }
 
 .main-content {
   h1, h2, h3, h4, h5, h6 {
     color: #155799;
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
   }
+}
+
+body {
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
 }
 
 .site-footer {
   text-align: center;
-  padding: 20px 0;
+  padding: 2rem 1rem;
+  border-top: solid 1px #eff0f1;
+}
+
+/* 导航菜单样式 */
+.site-nav {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  
+  a {
+    margin: 0 1rem;
+    color: #155799;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
