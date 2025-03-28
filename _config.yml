@@ -1,0 +1,18 @@
+title: 游戏列表
+description: 精选网页游戏合集
+theme: jekyll-theme-cayman
+lang: zh-CN
+permalink: /:categories/:title/
+timezone: Asia/Shanghai
+
+# 导航菜单
+header_pages:
+  - about.md
+  - categories.md
+
+# 网站设置
+url: "https://chengkeshuai.github.io"
+baseurl: ""
+
+# 社交链接
+github_username: chengkeshuai
