@@ -35,3 +35,15 @@ defaults:
     values:
       layout: default
       comments: true
+
+comments:
+  provider: giscus
+  giscus:
+    repo: chengkeshuai/chengkeshuai.github.io
+    repo-id: # 稍后填写
+    category: Announcements
+    category-id: # 稍后填写
+    mapping: pathname
+    reactions-enabled: 1
+    emit-metadata: 0
+    theme: light

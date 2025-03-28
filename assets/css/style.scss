@@ -222,3 +222,28 @@ body {
     }
   }
 }
+
+/* 评论区样式 */
+.comments-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e1e4e8;
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #2b5876;
+  }
+  
+  .giscus {
+    margin-top: 1rem;
+  }
+}
+
+/* 评论框样式优化 */
+.giscus-frame {
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #ffffff;
+}
