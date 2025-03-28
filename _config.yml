@@ -24,7 +24,7 @@ navigation:
 url: "https://chengkeshuai.github.io"
 baseurl: ""
 show_downloads: false
-google_analytics: # 如果有Google Analytics ID可以填在这里
+google_analytics: G-NMY2N67XP3  # 请替换为你的跟踪ID
 
 # 社交链接
 github_username: chengkeshuai
