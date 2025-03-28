@@ -1,0 +1,24 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* 自定义样式 */
+body {
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+}
+
+.page-header {
+  background: linear-gradient(120deg, #155799, #159957);
+}
+
+.main-content {
+  h1, h2, h3, h4, h5, h6 {
+    color: #155799;
+  }
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px 0;
+}
