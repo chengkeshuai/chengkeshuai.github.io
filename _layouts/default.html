@@ -45,6 +45,15 @@
 
       {{ content }}
 
+      {% if page.tags %}
+      <div class="post-tags">
+        <span class="tags-label">标签：</span>
+        {% for tag in page.tags %}
+        <a href="/tags/#{{ tag }}" class="tag-item">{{ tag }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+
       {% if page.comments != false %}
       <div class="comments-section">
         <h2>评论区</h2>

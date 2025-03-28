@@ -15,6 +15,8 @@ navigation:
     url: /
   - title: 游戏分类
     url: /categories/
+  - title: 游戏标签
+    url: /tags/
   - title: 关于我们
     url: /about/
 
