@@ -231,8 +231,30 @@ body {
   
   h2 {
     font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: #2b5876;
+  }
+
+  .comment-tips {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e1e4e8;
+    
+    p {
+      margin: 0.5rem 0;
+      color: #666;
+      font-size: 0.9rem;
+      
+      &:first-child {
+        margin-top: 0;
+      }
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
   
   .giscus {
