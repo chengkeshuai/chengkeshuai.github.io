@@ -21,6 +21,17 @@ navigation:
 # 网站设置
 url: "https://chengkeshuai.github.io"
 baseurl: ""
+show_downloads: false
+google_analytics: # 如果有Google Analytics ID可以填在这里
 
 # 社交链接
 github_username: chengkeshuai
+
+# 自定义设置
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: default
+      comments: true
