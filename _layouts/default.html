@@ -57,34 +57,45 @@
       </div>
       {% endif %}
 
-      {% if page.comments != false %}
-      <div class="comments-section">
-        <h2>评论区</h2>
-        <div class="comment-tips">
-          <p>💡 使用 GitHub 账号登录后即可发表评论</p>
-          <p>🔔 评论区支持 Markdown 格式</p>
-        </div>
-        <div class="giscus-container">
-          <script src="https://giscus.app/client.js"
-                  data-repo="chengkeshuai/chengkeshuai.github.io"
-                  data-repo-id="R_kgDOLvQxXQ"
-                  data-category="Announcements"
-                  data-category-id="DIC_kwDOLvQxXc4Cda0K"
-                  data-mapping="pathname"
-                  data-strict="0"
-                  data-reactions-enabled="1"
-                  data-emit-metadata="0"
-                  data-input-position="top"
-                  data-theme="preferred_color_scheme"
-                  data-loading="lazy"
-                  data-lang="zh-CN"
-                  crossorigin="anonymous"
-                  async>
-          </script>
-        </div>
+      {% if page.screenshots %}
+      <div class="game-screenshots">
+        {% for screenshot in page.screenshots %}
+          <div class="screenshot-item">
+            <img src="{{ screenshot.path }}" alt="{{ screenshot.caption }}" loading="lazy">
+            <p class="caption">{{ screenshot.caption }}</p>
+          </div>
+        {% endfor %}
       </div>
       {% endif %}
     </main>
+
+    {% if page.comments != false %}
+    <div class="comments-section">
+      <h2>评论区</h2>
+      <div class="comment-tips">
+        <p>💡 使用 GitHub 账号登录后即可发表评论</p>
+        <p>🔔 评论区支持 Markdown 格式</p>
+      </div>
+      <div class="giscus-container">
+        <script src="https://giscus.app/client.js"
+                data-repo="chengkeshuai/chengkeshuai.github.io"
+                data-repo-id="R_kgDOLvQxXQ"
+                data-category="Announcements"
+                data-category-id="DIC_kwDOLvQxXc4Cda0K"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="top"
+                data-theme="preferred_color_scheme"
+                data-loading="lazy"
+                data-lang="zh-CN"
+                crossorigin="anonymous"
+                async>
+        </script>
+      </div>
+    </div>
+    {% endif %}
 
     <footer class="site-footer">
       <div class="footer-content">
